@@ -9,6 +9,7 @@ html {
 body {
     margin: 100 200;
     max-width: 700;
+    min-width: 700;
     line-height: 1.6;
     font-size: 18;
     color: #444;
