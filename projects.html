@@ -1,8 +1,8 @@
 <html>
 <head>
-    <title>Projects by Brendon Walter</title>
+    <title>Brendon Walter</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
+	
 	<!-- Google Analytics -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -18,63 +18,193 @@
 
 <body>
     
-    <div id="navigation"> 
-        <a href="about.html"><img src="images/about.png" width="150"></a>
-        <a href="contact.html"><img src="images/contact.png" width="150"></a>
-        <a href="index.html"><img src="images/projectsSelected.png" width="150"></a>
-    </div> <!-- navigation -->
+    <div id="card-title">
+        <p align=right>
+        <a href="index.html">home</a> |
+        <a href="http://wiki.brendonwalter.net">wiki</a>
+        </p>
+    </div>
     
-    <div id="header">
-        <img src="images/myname.png">
-    </div> <!-- header -->
+    <div id="card-title">
+        <h2>Spring 2016</h2>
+    </div>
     
-    <div id="content">
+    <div id="card">
+        <h3>Advanced Computer Graphics</h3>
+
+        <h4>Raytracer in C++</h4>
         
-        <h1>Data Structures in C - Fall 2014</h1>
+        <p align="center">
+        <a target="_blank" href="bennington/advcg/spheres.png">
+            <img src="bennington/advcg/spheres.png" width=600>
+        </a>
+        </p>
         
-        <h2>N-body problem: Brute Force</h2>
-        <a href="images/portfolio/dataStructures_bruteForce.gif"><img src="images/portfolio/dataStructures_bruteForce.gif" width="200" align="right"></a>
-        <p>For a final project, I wanted to create an implementation of the Barnes-Hut algorithm for the N-body problem. Unfortunately, I did not have time to finish this, but I was able to successfully implement it via brute force. This simulation was done in only two dimensions, and the gif on the right shows  the results with 500 bodies.</p>
-        <p>Although the course itself was taught in C, I took the time to learn some C++ for this project. The full source code will be up on github.</p>
+        <p>In this class, each student created their own raytracer to render images in one of three offered languages. I chose to write mine in C++ as up to this point everything I had done on C++ had been mostly self-taught. </p>
+    </div>
+    
+    <div id="card">
+        <h3>Advanced Observing Projects</h3>
         
+        <p>We had three projects we to complete in this class: two smaller projects in the first half of term, and one larger project in the second half. Potential projects ranged from taking and creating beautiful images of objects in space to in depth research on a topic. Students were required to write up full reports on each project and choose one to present during the Science and Math poster session.</p>
+        
+        
+        <h4>RGB Image of Jupiter</h4>
+        
+        <p align="center">
+        <a target="_blank" href="bennington/advop/jupiter/jupiter_moons_color_cropped.png">
+            <img src="bennington/advop/jupiter/jupiter_moons_color_cropped.png" width=300 height=400>
+        </a>
+        <a target="_blank" href="bennington/advop/jupiter/jupiter_curves_cropped.png">
+            <img src="bennington/advop/jupiter/jupiter_curves_cropped.png" width=300 height=400>
+        </a>
+        </p>
+        
+        <p><b>Abstract</b>: Two images of Jupiter were created using 9 total images with 3 images each taken in R, G, and B filters. Color processing and image alignment was done in AstroImageJ. In the final images, two main dark stripes can be seen on Jupiter as well as some lighter stripes. Additionally, the four Galilean moons can be seen, with thee of them on one side and the fourth one on the other. I created two images using two different methods - the first method created a clearer picture overall especially of the planet while second method resulted in a fuzzy image of Jupiter and with faint moons.</p>
+        
+        <a href="bennington/advop/jupiter/jupiter.pdf">Full writeup</a>
+        
+        
+        <h4>Color Magnitude Diagram of M37</h4>
+        
+        <p align="center">
+        <a target="_blank" href="bennington/advop/m37/MED_aligned_B.png">
+            <img src="bennington/advop/m37/MED_aligned_B.png" width=600>
+        </a>
         <br>
+        <a target="_blank" href="bennington/advop/m37/cmd.png">
+            <img src="bennington/advop/m37/cmd.png" width=300>
+        </a>
+            <a target="_blank" href="bennington/advop/m37/redgiants.png">
+            <img src="bennington/advop/m37/redgiants.png" width=300>
+        </a>
+        </p>
         
-        <h1>How to Build a Radio Telescope - Spring 2014</h1>
-        <p>In this class, we built a radio telescope following a guide from MIT Haystack. We were able to successfully create the telescope itself and mount it on the roof of the science building as well as work the code from Haystack to work on our computers and telescope.</p>
+        <p><b>Abstract</b>: Images of M37 were taken with CCD on a 16 inch telescope on Bennington College campus. Image correction was done and two final images, one in a blue filter and one in green were created. Aperture photometry was preformed on these two images with 590 stars in the field being identified, analyzed, and plotted. The resulting Color-Magnitude Diagram has a very clear main sequence, although many of the stars in the image don’t seem to fall it, or any of the other expected branches. However, there is a clump of stars to the upper right of the main sequence around where the red giant branch is expected, although it is lower than anticipated.</p>
         
-        <br>
+        <a href="bennington/advop/m37/m37.pdf">Full writeup</a> |
+        <a href="bennington/advop/m37/m37%20poster.pdf">Poster</a>
         
-        <h1>Operating Systems - Spring 2014</h1>
+        
+        <h4>Observation of Kepler Binary Stars</h4>
+        
+        <p><b>Abstract</b>: The Kepler mission is set to find planets orbiting stars outside our solar system. In 2011, the Kepler mission released a catalog of all the eclipsing binaries that they had found so far. Using this catalog, I sorted the binaries by the depth of its primary eclipse with the idea that a deeper eclipse would result in more notable difference in magnitude. I then wrote a script in Python which would calculate the time and date of the next eclipse for each system. As so many of the systems had periods of less than 1 day, there would often be several eclipses happening in one hour. Observations were made with an Optec SSP-3 photometer on a 16 inch telescope at the Stickney Observatory on the Bennington College Campus. For the first two nights of data collecting, I only observed the counts given from the star. On the third night, I recorded a count of the night sky with no objects in it. No good results were obtained due to several reasons.</p>
+        
+        <a href="bennington/advop/binaries/binaries.pdf">Full writeup</a>
+    </div>
+    
+    <div id="card-title">
+        <h2>Fall 2015</h2>
+    </div>
+    
+    <div id="card">
+        <h3>Scripting for Computer Graphics</h3>
+
+        <p align="center">
+        <a target="_blank" href="bennington/scripting/basilicaCistern.png">
+            <img src="bennington/scripting/basilicaCistern.png" width="300">
+        </a>
+            
+        <a target="_blank" href="bennington/scripting/basilicaCistern0.png">
+            <img src="bennington/scripting/basilicaCistern0.png" width="300">
+        </a>
+        
+        <a target="_blank" href="bennington/scripting/basilicaCistern3.png">
+            <img src="bennington/scripting/basilicaCistern3.png" width="300">
+        </a>
+    
+        <a target="_blank" href="bennington/scripting/basilicaCistern1.png">
+            <img src="bennington/scripting/basilicaCistern1.png" width="300">
+        </a>
+        </p>
+        
+        <p>Each student spent the second half of the term working on their own, final scene in POV-Ray. I chose to recreate the Basilica Cistern in Istanbul, Turkey for my final. Using measurements I found online, I did my best to make everything to scale. Everything was created in POV-Ray with the exception of the column capitals. For those, I modeled them using Blender and converted the final file to POV-Ray format.</p>
+    </div>
+    
+    <div id="card-title">
+        <h2>Spring 2015</h2>
+    </div>
+    
+    <div id="card">
+        <h3>Astrogeology</h3>
+        
+        <h4>55 Cnc</h4>
+        <p>For the final, each student chose an exo-soalr system to write a final report on. The form that the final could take was very open ended. Students could do anything from a hard science fiction short story to a scientific report. I took the opportunity to expand on my final for Web As Artistic Platform by creating a similar website, but for the 55 Cnc system rather than our solar system.</p>
+        
+        <a href="bennington/astrogeology/final/">Website</a>
+    </div>
+    
+    <div id="card-title">
+        <h2>Fall 2014</h2>
+    </div>
+    
+    <div id="card">
+        
+        <h3>Data Structures in C</h3>
+
+        <h4> Brute-force N-body simulation</h4>
+        
+        <p align="center">
+        <a target="_blank" href="bennington/datastructures/bruteForce.gif">
+            <img src="bennington/datastructures/bruteForce.gif">
+        </a>
+        </p>
+    
+        <p>For a final project, I wanted to create an implementation of the Barnes-Hut algorithm for the N-body problem. Unfortunately, I did not have time to finish this, but I was able to successfully implement it via brute force. This simulation was done in only two dimensions, and the gif above shows the results with 500 bodies. Although the course itself was taught in C, I took the time to learn some C++ for this project.</p>
+    </div>
+    
+    <div id="card-title">
+        <h2>Spring 2014</h2>
+    </div>
+    
+    <div id="card">
+        <h3>How to Build a Radio Telescope</h3>
+
+        <p>In this class, we built a radio telescope following a guide from MIT Haystack. We were able to successfully create the telescope itself and mount it on the roof of the science building as well as make the code from Haystack work on our computers and telescope.</p>
+    </div>
+    
+    <div id="card">
+        <h3>Operating Systems: RamuntOS</h3>
+
         <p>We created a simple operating system, RumuntOS, for a Raspberry Pi written in C and ARM Assembly. My mine focus in this group project was to create the process tree for the operating system, which was implemented as a b-tree written in C.</p>
-        
-        <br>
-        
-        <h1>Distributed Systems - Fall 2013</h1>
+    </div>
+    
+    <div id="card-title">
+        <h2>Fall 2013</h2>
+    </div>
+    
+    <div id="card">
+        <h3>Distributed Systems: Google File System implementation</h3>
+
         <p>As a group, we created an implementation of the Google File System (GFS) written in Python and distributed across multiple Raspberry Pis. The final product allowed for users to upload and download files, which would be stored in redundant parts across various servers.</p>
-        
-        <br>
-        
-        <h1>Web As Artistic Platform - Fall 2012</h1>
-        
-        <h2>Personal Site</h2>
-        <a href="http://student2.bennington.edu/~bwalter"><img src="images/portfolio/webAsArtisticPlatform_personalSite.png" width="200" align="right"></a>
+    </div>
+    
+    <div id="card-title">
+        <h2>Fall 2012</h2>
+    </div>
+    
+    <div id="card">
+        <h3>Web As Artistic Platform</h3>
+
+        <h4>Personal Site</h4>
         <p>As a part of Web As Artistic Platform, students were required to make a personal site - a site which would act as a 'homepage' for us to put all of our work for the term onto, as well as any other work we wanted.</p>
         
-        <br>
+        <a href="bennington/web/personalsite">Website</a>
         
-         <h2>NOLI ME</h2>
-        <a href="http://student2.bennington.edu/~bwalter/links/noli_me/noli_me.html"><img src="images/portfolio/webAsArtisticPlatform_noliMe.png" width="200" align="right"></a>
-        <p>This site came about through a misunderstanding of an assignment... </p>
-        <p>I was inspired by <a href="http://wwwwwwwww.jodi.org/">jodi</a> to play around with hiding messages within the site, both on the webpage itself and in the source code.</p>
+        <h4>NOLI ME</h4>
+        <p>This site came about through a misunderstanding of an assignment...</p>
+
+        <p>I was inspired by jodi to play around with hiding messages within the site, both on the webpage itself and in the source code.</p>
         
-        <br>
+        <a href="bennington/web/nolime">Website</a>
         
-        <h2>The Final Frontier?</h2>
-        <a href="http://student2.bennington.edu/~bwalter/Final%20Project/index.html"><img src="images/portfolio/webAsArtisticPlatform_final.png" width="200" align="right"></a>
+        <h4>The Final Frontier?</h4>
         <p>For my final project for Web As Artistic Platform, I decided to create a site which would give information about the solar system - specifically to encourage space exploration.</p>
-        <p>This is a project I am planning on continuing working on, and did so a bit in my final project for Astrogeolgy in Spring, 2015.</p>    
-    
-    </div> <!-- content -->
+
+        <p>This is a project I am planning on continuing working on, and did so a bit in my final project for Astrogeolgy in Spring, 2015.</p>
+        
+        <a href="bennington/web/final">Website</a>
+    </div>
     
 </body>
     

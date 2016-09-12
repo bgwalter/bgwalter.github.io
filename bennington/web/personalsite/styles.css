@@ -1,0 +1,136 @@
+html { 
+	background: url(images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+   font-family: Helvetica, sans-serif;
+   color: #ffffff;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:link {
+   color:#ffffff;
+}
+
+a:visited {
+   color:#ffffff;
+}
+
+a:hover {
+   color:#718fc7;
+}
+
+h2 {
+   font-size:24px;
+   padding:17px 0 0 23px;
+   word-spacing:53px;
+}
+
+/* START HOME */
+
+
+#enterNav {
+   background-color: transparent;
+   background-image:url("images/welcome_box.png");
+   height:64px;
+   width:278px;
+   margin: 100px 0 0 40px;
+   padding:0px 0 0 0px;
+}
+
+#enterNav a:link{
+   color:#718fc7;
+
+}
+
+#enterNav a:visited{
+   color:#718fc7;
+}
+
+#enterNav a:hover{
+   color:#ffffff;
+}
+
+
+#container {
+   /*background-color:transparent;
+   background-image:url("images/content_boxes.png");*/
+   height:458px;
+   width:894px;
+   margin:250px 0 0 40px;
+   padding:0 0 0 0;
+}
+
+#nav {
+   word-spacing:30px;
+   font-size:30px;  
+   letter-spacing: .9px; 
+}
+
+#nav ul {
+   list-style:none;
+}
+
+#nav li {
+   display:inline;
+   color:#718fc7;
+   background-image:url("images/main_box.png");
+   background-repeat:no-repeat;
+   padding: 6px 35px 6px 35px;
+}
+
+h1{
+   padding:0 0 0px 0px;
+   font-size:24px;
+}
+
+#main {
+   font-size: 12px;
+   line-height: 18px;
+   background-image:url("images/main_box.png");
+   background-repeat:no-repeat;
+   height:360px;
+   width:550px;
+   padding:10px 100px 0px 225px;
+}
+
+#main ul {
+   list-style:none;
+}
+
+#main li {
+   display:inline;
+}
+
+#name {
+   font-size:20px;
+   color:#816464;
+   letter-spacing: .9px;
+   display:inline;
+   background-image:url("images/main_box.png");
+   background-repeat:no-repeat;
+   padding: 6px 35px 6px 35px;
+   margin: 0 0 0 600px;
+}
+
+#port_nav ul {
+   list-style:none;
+}
+
+#port_nav li {
+   color:#718fc7;
+}
+
+#port_nav {
+   font-size: 10px;
+   padding: 5px 0 0 0;
+   float:left;
+   width:200px
+}

@@ -1,0 +1,119 @@
+html {
+	background: url(images/chalkboardweb.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#container {
+	width: 900px;
+	margin: 0px auto;
+}
+
+#header {
+	width: 841px;
+	height: 351px;
+	margin: 0;
+	padding: 0;
+}
+
+#planet {
+	float: left;
+	width: 325px;
+	margin: 0 0 0 0;
+	padding: 100px 0 0 0;
+}
+
+#uranus {
+	float: left;
+	width: 325px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#saturn {
+	float: left;
+	width: 370px;
+	margin: 0;
+	padding: 0;
+}
+
+#infoText {
+	float: left;
+	width: 800px;
+	margin: 50px 0 0 30px;
+	color: #dddddd;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+#fixedHeightContainer {
+	height: 500px;
+	width: 510px;
+	padding: 30px 15px 0 0;
+	float: right;
+}
+
+#uranusFixedHeightContainer {
+	height: 300px;
+	width: 510px;
+	padding: 100px 15px 0 0;
+	float: right;
+}
+
+#info {
+	height: 500px;
+	overflow:auto;
+	color: #dddddd;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	color: #b7a78d;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+h2 {
+	color: #e6c876;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+h3 {
+	color: #899e54;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+h4 {
+	color: #bc7853;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+h5 {
+	color: #d59e59;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+h6 {
+	color: #e3b158;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+h7 {
+	color: #4a888b;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+h8 {
+	color: #587dcf;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
