@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Current Julian Date UTC</title>
+
+    <style>
+    body {
+        text-align: center;
+        font-size: 10vmin;
+        margin: 20;
+    }
+    </style>
+
+    <script type="text/javascript">
+    function getJD() {
+        var d = new Date();
+
+        // formulas taken from 
+        // https://wikipedia.org/wiki/Julian_day#Julian_day_number_calculation
+        var a = Math.floor((14 - d.getUTCMonth()+1) / 12);
+        var y = d.getUTCFullYear() + 4800 - a;
+        var m = d.getUTCMonth()+1 + 12*a - 3;
+
+        var jdn = d.getUTCDate() + Math.floor((153*m + 2) / 5) +
+                  365*y + Math.floor(y/4) - Math.floor(y/100) +
+                  Math.floor(y/400) - 32045;
+
+        var jd = jdn + (d.getUTCHours() - 12)/24 +
+                       d.getUTCMinutes()/1440 +
+                       d.getUTCSeconds()/86400;
+
+        document.getElementById("jd").innerHTML = jd.toFixed(5); 
+    } 
+
+    setInterval(getJD, 1000);
+    </script>
+</head>
+
+<body onload="getJD()">
+    <p id="jd"></p>
+</body>
+
+</html>
