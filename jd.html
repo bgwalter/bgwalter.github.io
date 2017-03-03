@@ -1,29 +1,9 @@
 <html>
 
-<script>
+<head>
+    <title>Current Julian Date UTC</title>
 
-    function getJD() {
-        var d = new Date();
-
-        // formulas taken from 
-        // https://wikipedia.org/wiki/Julian_day#Julian_day_number_calculation
-        var a = Math.floor((14 - d.getUTCMonth()+1) / 12);
-        var y = d.getUTCFullYear() + 4800 - a;
-        var m = d.getUTCMonth()+1 + 12*a - 3;
-
-        var jdn = d.getUTCDate() + Math.floor((153*m + 2) / 5) +
-                  365*y + Math.floor(y/4) - Math.floor(y/100) +
-                  Math.floor(y/400) - 32045;
-
-        var jd = jdn + (d.getUTCHours() - 12)/24 +
-                       d.getUTCMinutes()/1440 +
-                       d.getUTCSeconds()/86400;
-
-        document.getElementById("jd").innerHTML = jd.toFixed(5); 
-    } 
-
-    setInterval(getJD, 1000);
-
+    <script>
     // google analytics
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,10 +13,35 @@
 	  ga('create', 'UA-71275242-2', 'auto');
 	  ga('send', 'pageview');
 
-</script>
 
-<head>
-    <title>Current Julian Date UTC</title>
+    function getJD() {
+        var d = new Date();
+
+        var year = d.getUTCFullYear()
+        var month = d.getUTCMonth() + 1
+        var day = d.getUTCDate()
+    
+        var hour = d.getUTCHours()
+        var minute = d.getUTCMinutes()
+        var second = d.getUTCSeconds() 
+
+        // formulas taken from 
+        // https://wikipedia.org/wiki/Julian_day#Julian_day_number_calculation
+        var a = Math.floor((14 - month) / 12);
+        var y = year + 4800 - a;
+        var m = month + 12*a - 3;
+
+        var jdn = day + Math.floor((153*m + 2) / 5) 
+                    + 365*y + Math.floor(y/4) - Math.floor(y/100) 
+                    + Math.floor(y/400) - 32045;
+
+        var jd = jdn + (hour - 12)/24 + minute/1440 + second/86400;
+
+        document.getElementById("jd").innerHTML = jd.toFixed(5); 
+    } 
+
+    setInterval(getJD, 1000);
+    </script>
 
     <style>
     body {
